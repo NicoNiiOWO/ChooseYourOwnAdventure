@@ -14,7 +14,7 @@ var game = {
                 },
 
                 {
-                    text: "Keep on moving",
+                    text: "Get wood",
                     nextLevel: "field",
                 },
             ]
@@ -22,23 +22,31 @@ var game = {
 
         cave: {
             background_image: "fire.gif",
-            music: "Final-Fantasy-7-Boss-Battle.mp3",
-            message: "You come across a fire monster or something!",
+            music: "megalovania.mp3",
+            message: "You found a skeleton",
             choices: [
                 {
-                    text: "Start over",
-                    nextLevel: "start",
+                    text: "",
+                    nextLevel: "",
                 },
+                {
+                    text: "Leave",
+                    nextLevel: "field"
+                }
             ]
         },
 
         field: {
-            message: "Some adventurer you are...",
+            message: "You made wooden tools",
             choices: [
                 {
-                    text: "Start over",
-                    nextLevel: "start",
+                    text: "Mine",
+                    nextLevel: "",
                 },
+                {
+                    text: "",
+                    nextLevel: ""
+                }
             ]
         },
 
