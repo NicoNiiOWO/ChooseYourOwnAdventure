@@ -1,8 +1,8 @@
 // NOTE - You must have a level with the name "start".  This is used as the first level in the game.
 
 var game = {
-    music: "98_Lost_Mine.mp3",
-    background_image: "intro-bg.jpg",
+    music: "Calm 1.mp3",
+    background_image: "start.png",
     levels: {
 
         start: {
@@ -15,14 +15,14 @@ var game = {
 
                 {
                     text: "Get wood",
-                    nextLevel: "field",
+                    nextLevel: "tools",
                 },
             ]
         },
 
         cave: {
-            background_image: "fire.gif",
-            music: "megalovania.mp3",
+            background_image: "skeleton.png",
+            music: "Megalovania.mp3",
             message: "You found a skeleton",
             choices: [
                 {
@@ -30,13 +30,15 @@ var game = {
                     nextLevel: "deaded",
                 },
                 {
-                    text: "Leave",
-                    nextLevel: "field"
+                    text: "Leave and get wood",
+                    nextLevel: "tools"
                 }
             ]
         },
         
         deaded: {
+            background_image: "deaded.png",
+            music: "oof.mp3",
             message: "You died",
             choices: [
                 {
@@ -46,8 +48,10 @@ var game = {
             ]
         },
 
-        field: {
-            message: "You got wood and made stone tools",
+        tools: {
+            background_image: "tools.png",
+            music: "Calm 1.mp3",
+            message: "You got some wood and made stone tools",
             choices: [
                 {
                     text: "Mine",
@@ -57,6 +61,8 @@ var game = {
         },
         
         cave2: {
+            background_image: "iron.png",
+            music: "Calm 1.mp3",
             message: "You found iron",
             choices: [
                 {
@@ -71,6 +77,8 @@ var game = {
         },
         
         diamonds1: {
+            background_image: "diamonds1.png",
+            music: "Hal 1.mp3",
             message: "You found diamonds",
             choices: [
                 {
@@ -85,6 +93,8 @@ var game = {
         },
         
         f: {
+            background_image: "f.png",
+            music: "Hal 1.mp3",
             message: "You tried mining but your pickaxe wasn't good enough. You lost the diamonds",
             choices: [
                 {
@@ -95,6 +105,8 @@ var game = {
         },
         
         pickaxe: {
+            background_image: "pickaxe.png",
+            music: "Calm 3.mp3",
             message: "You made an iron pickaxe",
             choices: [
                 {
@@ -105,6 +117,8 @@ var game = {
         },
         
         diamonds2: {
+            background_image: "diamonds2.png",
+            music: "Hal 1.mp3",
             message: "You found diamonds",
             choices: [
                 {
@@ -113,12 +127,14 @@ var game = {
                 },
                 {
                     text: "Come back later",
-                    nextLevel: "cave3"
+                    nextLevel: "lava"
                 }
             ]
         },
         
         diamonds: {
+            background_image: "diamonds.png",
+            music: "Hal 1.mp3",
             message: "You got diamonds",
             choices: [
                 {
@@ -128,7 +144,9 @@ var game = {
             ]
         },
         
-        cave3: {
+        lava: {
+            background_image: "lava.png",
+            music: "oof.mp3",
             message: "You got lost in the cave and fell in lava",
             choices: [
                 {

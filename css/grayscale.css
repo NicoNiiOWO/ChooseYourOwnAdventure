@@ -1,8 +1,11 @@
-c/*!
+/*!
  * Start Bootstrap - Grayscale v3.3.7+1 (http://startbootstrap.com/template-overviews/grayscale)
  * Copyright 2013-2016 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
+.intro-body{
+  height: 100vh;
+}
 body {
   width: 100%;
   height: 100%;
@@ -136,7 +139,6 @@ a:focus {
   background-color: black;
   -webkit-background-size: cover;
   -moz-background-size: cover;
-  background-size: cover;
   -o-background-size: cover;
 }
 .intro .intro-body {
